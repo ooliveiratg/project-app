@@ -1,4 +1,7 @@
-import { Text, View } from "react-native";
+import React from "react";
+import {  View } from "react-native";
+import { SplashScreens } from "./screens/splash";
+
 
 export default function Index() {
   return (
@@ -9,7 +12,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <SplashScreens/>
     </View>
   );
 }
