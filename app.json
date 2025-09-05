@@ -12,22 +12,20 @@
     },
     "android": {
       "adaptiveIcon": {
-  
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.projectth"
     },
     "web": {
       "bundler": "metro",
       "output": "static"
-
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-    
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
