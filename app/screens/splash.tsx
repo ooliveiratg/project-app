@@ -1,16 +1,11 @@
-import React from 'react';
-import { View } from 'react-native';
-import { DotLottie } from '@lottiefiles/dotlottie-react-native';
+import { Text, View } from 'react-native';
 
-export function SplashScreens(){
+const SplashScreens = () => {
   return (
-    <View style={{ flex: 1 }}>
-      <DotLottie
-        source={require('../../assets/lottie/Cosmos.json')}
-        loop
-        autoplay
-        style={{ width: 200, height: 200 }}
-      />
+    <View>
+      <Text className='text-purple-800'>Hello</Text>
     </View>
   );
-}; 
+};
+
+export default SplashScreens;

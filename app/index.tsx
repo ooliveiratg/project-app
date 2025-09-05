@@ -1,17 +1,9 @@
-import React from "react";
 import { View } from "react-native";
-import { SplashScreens } from "./screens/splash";
-import "./global.css"
+import SplashScreens from "./screens/splash"; 
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <View className="flex-1 items-center justify-center bg-purple-500">
       <SplashScreens/>
     </View>
   );
