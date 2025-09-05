@@ -1,7 +1,7 @@
 import React from "react";
-import {  View } from "react-native";
+import { View } from "react-native";
 import { SplashScreens } from "./screens/splash";
-
+import "./global.css"
 
 export default function Index() {
   return (

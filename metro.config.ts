@@ -1,12 +1,7 @@
-const { getDefaultConfig } = require('metro-config');
-
-module.exports = (async () => {
-  const {
-    resolver: { sourceExts, assetExts },
-  } = await getDefaultConfig();
-  return {
-    resolver: {
-      assetExts: [...assetExts, 'lottie'],
-    },
-  };
-})();
+const { withNativeWind } = require("nativewind/metro");
+ 
+// ... existing Nx configuration
+ 
+module.exports = withNxMetro(mergeConfig(defaultConfig, customConfig), {
+  // ... existing Nx config
+}).then((config) => withNativeWind(config, { input: "./global.css" }));
